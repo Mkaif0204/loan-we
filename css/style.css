@@ -238,6 +238,12 @@ h4 {
   color: white;
   box-shadow: 12px 14px 0 #f5b197;
   transform: rotate(-5deg);
+  transition: transform 0.35s ease,
+            box-shadow 0.35s ease;
+}
+.loan-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.15);
 }
 
 .card-top,
