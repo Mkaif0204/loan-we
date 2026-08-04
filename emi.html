@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>EMI Calculator — Finora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <span>
+        </span>
+    </div>
+    <header class="header inner">
+        <a class="brand" href="index.html">
+            <span>f</span>finora</a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a class="active" href="emi.html">EMI Calculator</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a class="button button-small" href="contact.html#form">Apply now <i>→</i>
+            </a>
+            <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+        </nav>
+    </header>
+    <main>
+        <section class="page-hero compact">
+            <p class="eyebrow">Plan with confidence</p>
+            <h1>Know your numbers <em>before</em> you borrow.</h1>
+            <p>Move the sliders to see a clear monthly picture. No guesswork required.</p>
+        </section>
+        <section class="section calculator">
+            <div class="calculator-controls">
+                <h2>Your loan details</h2>
+                <label>Loan amount <output id="amountOut">₹ 5,00,000</output>
+                    <input id="amount" type="range" min="50000" max="5000000" value="500000" step="50000">
+                </label>
+                <label>Interest rate <output id="rateOut">11.5% p.a.</output>
+                    <input id="rate" type="range" min="7" max="24" value="11.5" step=".1">
+                </label>
+                <label>Loan tenure <output id="tenureOut">5 years</output>
+                    <input id="tenure" type="range" min="1" max="15" value="5" step="1">
+                </label>
+                <a class="button" href="contact.html#form">Get this loan <i>→</i>
+                </a>
+            </div>
+            <div class="calculator-result">
+                <p class="eyebrow">Your estimated EMI</p>
+                <h2 id="emi">₹ 10,990</h2>
+                <p class="muted">per month</p>
+                <div class="donut" id="donut">
+                    <div>
+                        <b id="principalPct">56%</b>
+                        <small>principal</small>
+                    </div>
+                </div>
+                <div class="result-cards">
+                    <div>
+                        <span>Principal</span>
+                        <b id="principal">₹ 5,00,000</b>
+                    </div>
+                    <div>
+                        <span>Total interest</span>
+                        <b id="interest">₹ 1,59,400</b>
+                    </div>
+                    <div>
+                        <span>Total payment</span>
+                        <b id="total">₹ 6,59,400</b>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Lower your repayment</p>
+                <h2>Smart ways to reduce your EMI</h2>
+            </div>
+            <div class="tips-grid">
+                <article>
+                    <span>01</span>
+                    <h3>Choose a suitable tenure</h3>
+                    <p>A longer tenure reduces monthly pressure, while a shorter one cuts total interest.</p>
+                </article>
+                <article>
+                    <span>02</span>
+                    <h3>Improve your credit score</h3>
+                    <p>A stronger score can unlock a lower interest rate before you apply.</p>
+                </article>
+                <article>
+                    <span>03</span>
+                    <h3>Make part-prepayments</h3>
+                    <p>Use bonus income to lower your principal and finish earlier.</p>
+                </article>
+            </div>
+        </section>
+        <section class="newsletter">
+            <div>
+                <p class="eyebrow">Stay informed</p>
+                <h2>Money moves, made smarter.</h2>
+                <p>Practical financial tips, delivered once a month.</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button class="button">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <a class="brand" href="index.html">
+                    <span>f</span>finora</a>
+                <p>Finance that feels a little more human.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <a href="services.html">Loan services</a>
+                <a href="emi.html">EMI calculator</a>
+                <a href="about.html">Our story</a>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <a href="contact.html">Contact us</a>
+                <a href="services.html#faq">FAQs</a>
+            </div>
+            <div>
+                <h4>Talk to us</h4>
+                <a href="tel:+918000000000">+91 80000 00000</a>
+                <a href="mailto:hello@finora.in">hello@finora.in</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Finora Finance. All rights reserved.</span>
+            <span>Made with clarity in India</span>
+        </div>
+    </footer>
+    <button class="chat-button">◌<span>Chat with us</span>
+    </button>
+    <div class="chat-panel">
+        <div>
+            <b>Finora support</b>
+            <button>×</button>
+        </div>
+        <p>Hi! How can we help today?</p>
+        <small>Usually replies in a few minutes</small>
+    </div>
+    <a class="whatsapp" href="https://wa.me/918000000000">◔</a>
+    <button class="to-top">↑</button>
+    <div class="toast">
+    </div>
+    <script src="js/script.js">
+    </script>
+</body>
+
+</html>
